@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>S-PkPG by hmiorroi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">S-PkPG</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/hmiorroi/S-PkPG/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/hmiorroi/S-PkPG/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/hmiorroi/S-PkPG">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/hmiorroi">hmiorroi</a></p>
+
+
+      </header>
+      <section>
+        <h1>S-PkPG</h1>
+
+<p>S-PkPGはペアカーニング情報を持った全角約物フォントです。<br>
+WEBフォントとして使用することで、WEBブラウザでの連続約物の処理が可能です。</p>
+
+<h4>S-PkPG</h4>
+
+<p>仮想ボディ全角の約物フォント。<br>
+ペアカーニングが有効な環境（text-rendering: optimizeLegibility;）では、連続した約物やemdashの詰めが可能です。</p>
+
+<h4>S-PkPG-HP</h4>
+
+<p>括弧等の仮想ボディを550〜650に設定した約物フォント。<br>
+ペアカーニングが有効ではない環境でも、狭く設定された仮想ボディにより、連続した括弧類が詰め、行頭括弧の頭揃が可能です。<br>
+emdashを仮想ボディと同じに設定してあるため、詰めることなく2倍ダーシが可能です。</p>
+
+<h2>収録字形</h2>
+
+<p>「」『』（）｛｝［］〈〉《》〔〕【】、，。．・：；― —</p>
+
+<h2>使用例</h2>
+
+<div class="highlight"><pre><span class="k">@font-face</span> <span class="p">{</span>
+  <span class="nt">font-family</span><span class="o">:</span> <span class="s2">"S-PkPG-R"</span><span class="o">;</span>
+  <span class="nt">src</span><span class="o">:</span> <span class="nt">url</span><span class="o">(</span><span class="s2">"S-PkPG-R.ttf"</span><span class="o">)</span> <span class="nt">format</span><span class="o">(</span><span class="s1">'truetype'</span><span class="o">);</span>
+<span class="p">}</span>
+<span class="nt">body</span><span class="p">{</span>
+  <span class="k">text</span><span class="o">-</span><span class="n">rendering</span><span class="o">:</span> <span class="n">optimizeLegibility</span><span class="p">;</span>
+  <span class="k">font-family</span><span class="o">:</span> <span class="n">S</span><span class="o">-</span><span class="n">PkPG</span><span class="o">-</span><span class="n">R</span><span class="o">,</span> <span class="s1">'ヒラギノ角ゴ Pro W3'</span><span class="o">,</span><span class="s1">'メイリオ'</span><span class="o">,</span><span class="s1">'ＭＳ ゴシック'</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h2>更新履歴</h2>
+
+<h4>2013-1-1 ver.1.002</h4>
+
+<h5>共通</h5>
+
+<p>horizontalbar, emdash, semicolon.fullwidth, colon.fullwidth, dot-katakanaを追加。<br>
+字形の変更。<br>
+A-Za-zに空白のglyphが設定されていた不具合を修正。  </p>
+
+<h5>S-PkPG-R</h5>
+
+<p>ペアカーニングを修正。</p>
+
+<h5>S-PkPG-HP-R</h5>
+
+<p>文字幅を修正。<br>
+ペアカーニングを修正。</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
